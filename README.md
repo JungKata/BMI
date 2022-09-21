@@ -1,4 +1,4 @@
-# [Név]
+# [Jung Katalin]
 
 ## Hogyan kezdj neki?
 
