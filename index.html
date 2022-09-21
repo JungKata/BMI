@@ -33,8 +33,8 @@
                     <label for="suly">kg</label>
                 </div>
 
-                <div class="gomb">
-                    <button type="submit" id="Gomb" onclick="">Számítás</button>
+                <div class="gombdoboz">
+                    <button type="submit" id="gomb" onclick="kiszamol()">Számítás</button>
                 </div>
 
             </div>
@@ -42,8 +42,8 @@
 
     
             <div class="row">
-                <h1 id="index">Az ÖN BMI ÉRTÉKE:</h1>
-                <h1 id="bmiertek"></h1>
+                <h1 id="index">Az ÖN BMI ÉRTÉKE: <span id="eredmeny">0</span></h1>
+                
             </div>
     
 
@@ -63,27 +63,27 @@
             </tr>
             <tr>
                 <th class="text-center elsofok">30 - 34,9</th>
-                <td class="elsofok">I. FOKÚ ELHÍZÁS</td>
+                <td class="elsotulsuly">I. FOKÚ ELHÍZÁS</td>
             </tr>
             <tr>
                 <th class="text-center masodikfok">35 - 39,9</th>
-                <td class="masodikfok">II. FOKÚ ELHÍZÁS</td>
+                <td class="masodiktulsuly">II. FOKÚ ELHÍZÁS</td>
             </tr>
             <tr>
                 <th class="text-center harmadikfok">40 vagy több</th>
-                <td class="harmadikfok">III. FOKÚ ELHÍZÁS</td>
+                <td class="harmadiktulsuly">III. FOKÚ ELHÍZÁS</td>
             </tr>
         </table>
 
         <div class="row">
-            <h1 id="index">AZ IDEÁLIS TESTTÖMEGE: </h1>
-            <h1 id="ideal"></h1>
+            <h1 id="index1">AZ IDEÁLIS TESTTÖMEGE: </h1>
+            <h1 id="idealisertek"></h1>
         </div>
 
         <table class="table">
             <tr>
-                <th class="text-center" id="szelsoertek"></th>
-                <td id="szelsoertektext">Szélső értékek</td>
+                <th class="text-center" id="szelso_adat"></th>
+                <td id="szelso">Kivánatos szélső értékek</td>
             </tr>
         </table>
 
