@@ -1,30 +1,3 @@
-/*function kiszamol(e)
-{
-    let suly = parseFloat(document.getElementById('suly').value);
-    let hossz = parseFloat(document.getElementById('hossz').value);
-
-    document.getElementById('eredmeny').value = suly + hossz;
-}*/
-/*function kiszamol()
-{
-    
-
-
-  var listaElem = document.getElementById("sovany");
-  listaElem.classList.remove("tabla");
-  var listaElem = document.getElementById("normal");
-  listaElem.classList.remove("tabla");
-  var listaElem = document.getElementById("tulsuly");
-  listaElem.classList.remove("tabla");
-  var listaElem = document.getElementById("elsotulsuly");
-  listaElem.classList.remove("tabla");
-  var listaElem = document.getElementById("masodiktulsuly");
-  listaElem.classList.remove("tabla");
-  var listaElem = document.getElementById("harmadiktulsuly");
-  listaElem.classList.remove("tabla")
-  
-  */
-
 
 
 function kiszamol(){
