@@ -1,0 +1,27 @@
+body{
+    margin: 20px;
+}
+
+#adatok{
+    background-color: rgb(255, 137, 41);
+    color: white;
+}
+#bekeres{
+    margin-top: 15px;
+}
+#magassag, #suly{
+    margin: 15px;
+    margin-bottom: 15px;
+}
+#bevitel{
+    margin-top: 5px;
+}
+#Gomb{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: rgb(255,135,40);
+    border-color:rgb(255,120,20);
+}
+#Gomb:hover{
+    background-color: rgb(205, 203, 203);
+}

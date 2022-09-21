@@ -9,40 +9,90 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="bmi.js"></script>
+    <link rel="stylesheet" href="main.css">
     <title>BMI Kalkulátor</title>
 </head>
 <body>
+    
     <section>
-
-         <div class="container" id="fo">
-            <div class="row">
+        <h1>BMI index Kalkulátor</h1>
+    <div class="container" id="fo"></div>
+         
+            <div class="row" id="adatok">
                 
-                <div class="col-md-8 col-lg-8 col xl-8">
-                    <p>Írja be a cm-ben számított testmagasságát (cipő nélkül mérve): </p>
-                    <p>Írja be kg-ban számított testsúlyát (cipő nélkül mérve): </p>
+                <div class="col-md-8 col-lg-8 col-xl-8" id="bekeres">
+                    <p id="magassag">Írja be a cm-ben számított testmagasságát (cipő nélkül mérve): </p>
+                    <p id="suly">Írja be kg-ban számított testsúlyát (cipő nélkül mérve): </p>
                 </div>
 
-                <div class="col-md-4 col-lg-4 col xl-4">
-                    <input type="text" name="magassag" id="hossz">
-                    <label for="magassag">cm</label>
-                    <input type="text" name="suly" id="tomeg">
+                <div class="col-md-4 col-lg-4 col-xl-4" id="bevitel">
+                    <input type="number" name="magassag" id="hossz">
+                    <label for="magassag">cm</label><br>
+                    <input type="number" name="suly" id="tomeg">
                     <label for="suly">kg</label>
                 </div>
 
                 <div class="gomb">
-                    <button type="submit" id="Gomb">Számítás</button>
+                    <button type="submit" id="Gomb" onclick="">Számítás</button>
                 </div>
 
             </div>
+    
 
+    
             <div class="row">
                 <h1 id="index">Az ÖN BMI ÉRTÉKE:</h1>
                 <h1 id="bmiertek"></h1>
             </div>
+    
 
-            
+    
+        <table class="table">
+            <tr>
+                <th class="text-center sovany">18,5 vagy kevesebb</th>
+                <td class="sovany">SOVÁNY</td>
+            </tr>
+            <tr>
+                <th class="text-center normal">18,5 - 24,9</th>
+                <td class="normal">NORMÁL</td>
+            </tr>
+            <tr>
+                <th class="text-center tulsuly">25 - 29,9</th>
+                <td class="tulsuly">TÚLSÚLY</td>
+            </tr>
+            <tr>
+                <th class="text-center elsofok">30 - 34,9</th>
+                <td class="elsofok">I. FOKÚ ELHÍZÁS</td>
+            </tr>
+            <tr>
+                <th class="text-center masodikfok">35 - 39,9</th>
+                <td class="masodikfok">II. FOKÚ ELHÍZÁS</td>
+            </tr>
+            <tr>
+                <th class="text-center harmadikfok">40 vagy több</th>
+                <td class="harmadikfok">III. FOKÚ ELHÍZÁS</td>
+            </tr>
+        </table>
 
-         </div>
-</section>
+        <div class="row">
+            <h1 id="index">AZ IDEÁLIS TESTTÖMEGE: </h1>
+            <h1 id="ideal"></h1>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th class="text-center" id="szelsoertek"></th>
+                <td id="szelsoertektext">Szélső értékek</td>
+            </tr>
+        </table>
+
+
+    </div>
+</section> 
+
+
+         
+    
 </body>
 </html>
